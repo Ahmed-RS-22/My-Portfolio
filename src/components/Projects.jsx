@@ -106,11 +106,14 @@ export const ProjectsSection = () => {
               className="group fade-in-up transform-[translateY(30px)_scale(0.5)] bg-card card-hover rounded-lg overflow-hidden shadow-xs "
             >
               <div className="h-48 overflow-hidden">
+                <a target="_blank" href={project.demo} className="h-full w-full">
+
                 <img
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 group-hover:cursor-pointer"
-                />
+                  />
+                  </a>
               </div>
               <div className="p-6 ">
                 <div className="min-h-20">

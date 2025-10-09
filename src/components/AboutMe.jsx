@@ -37,7 +37,6 @@ export const AboutMeSection = () => {
                 )}
                 href="/AhmedRedaSalama-Resume.pdf"
                 download
-                target="_blank"
               >
                 download CV
               </a>
