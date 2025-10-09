@@ -36,6 +36,7 @@ export const AboutMeSection = () => {
                   "transition-colors duration-300 border-2"
                 )}
                 href="/AhmedRedaSalama-Resume.pdf"
+                download
               >
                 download CV
               </a>
