@@ -7,7 +7,7 @@ Showcasing my **skills**, **projects**, and **contact information** with smooth 
 
 ## 🚀 Live Demo
 
-🔗 [View Portfolio](https://your-portfolio-link.vercel.app)
+🔗 [View Portfolio](https://my-portfolio-delta-lilac-71.vercel.app/)
 
 ---
 
