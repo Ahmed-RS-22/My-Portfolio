@@ -62,7 +62,9 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Email</h4>
                   <a
-                    href="mailto:ahmed.rs.1532@gmail.com"
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=ahmed.rs.1532@gmail.com&su=Let's%20Connect&body=Hi%20Ahmed,"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-foreground hover:text-primary transition-colors"
                   >
                     ahmed.rs.1532@gmail.com
