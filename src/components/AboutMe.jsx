@@ -35,7 +35,7 @@ export const AboutMeSection = () => {
                   "px-6 py-2 rounded-full text-primary hover:bg-primary/10",
                   "transition-colors duration-300 border-2"
                 )}
-                href="../../public/AhmedRedaSalama-Resume.pdf"
+                href="/AhmedRedaSalama-Resume.pdf"
               >
                 download CV
               </a>
