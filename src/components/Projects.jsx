@@ -18,7 +18,7 @@ const Projects = [
     Description:
       "Food ordering app with cart, category filters, and Google Maps integration.",
     image: "/projects/restaurant.png",
-    tags: ["React.js", "", "ReduxToolKit", "Axios"],
+    tags: ["React.js", "Tailwind", "ReduxToolKit", "Axios"],
     demo: "https://karam-el-sham-restaurant-sigma.vercel.app/",
     repo: "https://github.com/Ahmed-RS-22/Karam-ElSham-restaurant",
   },
