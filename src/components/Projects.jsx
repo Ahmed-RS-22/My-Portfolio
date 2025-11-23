@@ -27,7 +27,7 @@ const Projects = [
     title: "velora perfumes",
     Description:
       "perfumes e-commerce app with back-end seervice (supabase)",
-    image: "/projects/Gaget-Guru.png",
+    image: "/projects/velora.png",
     tags: ["React.js", "SupaBase", "ReduxToolKit", "Tailwind"],
     demo: "https://perfumes-velora.vercel.app/",
     repo: "https://github.com/Ahmed-RS-22/perfumes---velora",
