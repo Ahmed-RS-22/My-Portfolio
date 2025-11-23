@@ -18,9 +18,19 @@ const Projects = [
     Description:
       "Food ordering app with cart, category filters, and Google Maps integration.",
     image: "/projects/restaurant.png",
-    tags: ["React.js", "Tailwind", "ReduxToolKit", "Axios"],
+    tags: ["React.js", "", "ReduxToolKit", "Axios"],
     demo: "https://karam-el-sham-restaurant-sigma.vercel.app/",
     repo: "https://github.com/Ahmed-RS-22/Karam-ElSham-restaurant",
+  },
+  {
+    id: 7,
+    title: "velora perfumes",
+    Description:
+      "perfumes e-commerce app with back-end seervice (supabase)",
+    image: "/projects/Gaget-Guru.png",
+    tags: ["React.js", "SupaBase", "ReduxToolKit", "Tailwind"],
+    demo: "https://perfumes-velora.vercel.app/",
+    repo: "https://github.com/Ahmed-RS-22/perfumes---velora",
   },
   {
     id: 3,
