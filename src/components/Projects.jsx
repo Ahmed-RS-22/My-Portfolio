@@ -36,7 +36,7 @@ const Projects = [
     id: 4,
     title: "Velora Perfumes",
     Description: "A modern e-commerce platform built with React and Supabase",
-    image: "/projects/Velora.png",
+    image: "/projects/velora.png",
     tags: ["React.js", "SupaBase", "tailwind", "ReduxToolKit"],
     demo: "https://perfumes-velora.vercel.app/",
     repo: "https://github.com/Ahmed-RS-22/perfumes---velora",
