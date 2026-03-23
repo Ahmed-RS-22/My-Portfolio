@@ -14,6 +14,16 @@ const Projects = [
   },
   {
     id: 2,
+    title: "Doctor-clinc",
+    Description:
+      "A freelance project for a modern and professional doctor’s website ",
+    image: "/projects/Doctor.png",
+    tags: ["Next.js", "Tailwind", "SupaBase", "ReduxToolKit"],
+    demo: "https://drebtessamnada.online",
+    repo: "https://github.com/eslamshaban060/dr-ebtisam",
+  },
+  {
+    id: 3,
     title: "Restaurant Web App",
     Description:
       "Food ordering app with cart, category filters, and Google Maps integration.",
@@ -23,17 +33,16 @@ const Projects = [
     repo: "https://github.com/Ahmed-RS-22/Karam-ElSham-restaurant",
   },
   {
-    id: 7,
-    title: "velora perfumes",
-    Description:
-      "perfumes e-commerce app with back-end seervice (supabase)",
-    image: "/projects/velora.png",
-    tags: ["React.js", "SupaBase", "ReduxToolKit", "Tailwind"],
+    id: 4,
+    title: "Velora Perfumes",
+    Description: "A modern e-commerce platform built with React and Supabase",
+    image: "/projects/Velora.png",
+    tags: ["React.js", "SupaBase", "tailwind", "ReduxToolKit"],
     demo: "https://perfumes-velora.vercel.app/",
     repo: "https://github.com/Ahmed-RS-22/perfumes---velora",
   },
   {
-    id: 3,
+    id: 5,
     title: "Gadget Guru",
     Description:
       "Full-stack electronics platform with IC database, logic simulator, and Karnaugh map simplifier.",
@@ -43,7 +52,7 @@ const Projects = [
     repo: "https://github.com/Ahmed-RS-22/gadget-guru-",
   },
   {
-    id: 4,
+    id: 6,
     title: "Task Manager App",
     Description:
       "CRUD-based task manager with persistent storage and clean Material UI design.",
@@ -53,7 +62,7 @@ const Projects = [
     repo: "https://github.com/Ahmed-RS-22/TODO-List",
   },
   {
-    id: 5,
+    id: 7,
     title: "Movies App",
     Description:
       "Movie browser showing trending films, details, and smooth UI animations.",
@@ -63,7 +72,7 @@ const Projects = [
     repo: "https://github.com/Ahmed-RS-22/movies-App",
   },
   {
-    id: 6,
+    id: 8,
     title: "Registration System",
     Description:
       "Simple registration form with input validation and clean design.",
@@ -74,31 +83,31 @@ const Projects = [
   },
 ];
 export const ProjectsSection = () => {
-      useEffect(() => {
-        const lines = document.querySelectorAll(".project");
-        console.log(lines);
-        
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach(
-            (entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add("an");
-              } else {
-                entry.target.classList.remove("an");
-              }
-            },
-            {
-              root: null,
-              threshold: 0.4,
-            }
-          );
-        });
-        lines.forEach((line) => observer.observe(line));
-    
-        return () => {
-          lines.forEach((line) => observer.unobserve(line));
-        };
-      }, []);
+  useEffect(() => {
+    const lines = document.querySelectorAll(".project");
+    console.log(lines);
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(
+        (entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("an");
+          } else {
+            entry.target.classList.remove("an");
+          }
+        },
+        {
+          root: null,
+          threshold: 0.4,
+        },
+      );
+    });
+    lines.forEach((line) => observer.observe(line));
+
+    return () => {
+      lines.forEach((line) => observer.unobserve(line));
+    };
+  }, []);
   return (
     <section className="py-24 px-4 relative" id="projects">
       <div className="container mx-auto max-w-6xl">
@@ -116,20 +125,26 @@ export const ProjectsSection = () => {
               className="group fade-in-up transform-[translateY(30px)_scale(0.5)] bg-card card-hover rounded-lg overflow-hidden shadow-xs "
             >
               <div className="h-48 overflow-hidden">
-                <a target="_blank" href={project.demo} className="h-full w-full">
-
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 group-hover:cursor-pointer"
+                <a
+                  target="_blank"
+                  href={project.demo}
+                  className="h-full w-full"
+                >
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 group-hover:cursor-pointer"
                   />
-                  </a>
+                </a>
               </div>
               <div className="p-6 ">
                 <div className="min-h-20">
                   <div className="flex  flex-wrap gap-2 mb-1">
-                    {project.tags.map((tag,key) => (
-                      <span key={key} className="rounded-full px-2 py-1 text-xs font-medium text-primary bg-foreground/10 border-3 ">
+                    {project.tags.map((tag, key) => (
+                      <span
+                        key={key}
+                        className="rounded-full px-2 py-1 text-xs font-medium text-primary bg-foreground/10 border-3 "
+                      >
                         {tag}{" "}
                       </span>
                     ))}
@@ -152,7 +167,7 @@ export const ProjectsSection = () => {
                       <ExternalLink size={20} />
                     </a>
                     <a
-                    title="GitHub Repo"
+                      title="GitHub Repo"
                       target="_blank"
                       className="text-foreground/80 hover:text-primary transition-colors duration-300 "
                       href={project.repo}
@@ -166,9 +181,13 @@ export const ProjectsSection = () => {
           ))}
         </div>
         <div className="text-center mt-12">
-            <a href="https://github.com/Ahmed-RS-22" target="_blank" className="cosmic-button w-fit flex mx-auto items-center gap-2 ">
-                Check my GitHub <ArrowRight className="animate-pulse" size={16}/>
-            </a>
+          <a
+            href="https://github.com/Ahmed-RS-22"
+            target="_blank"
+            className="cosmic-button w-fit flex mx-auto items-center gap-2 "
+          >
+            Check my GitHub <ArrowRight className="animate-pulse" size={16} />
+          </a>
         </div>
       </div>
     </section>

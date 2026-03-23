@@ -98,16 +98,15 @@
     --border: 214 32% 91%;
   }
   .dark {
-    --background: 222 47% 4%;
-    --foreground: 213 31% 91%;
-    /* //////////// */
-    --card: 222 47% 8%;
-    /* /////////// */
-    --primary: 250 65% 65%;
-    --primary-foreground: 213 31% 91%;
-    /* /////////// */
-    --border: 217 33% 20%;
-    color-scheme: dark;
+    --background: 260 50% 5%;
+    --foreground: 260 20% 92%;
+
+    --card: 260 40% 10%;
+
+    --primary: 270 90% 65%; /* purple */
+    --primary-foreground: 0 0% 100%;
+
+    --border: 260 30% 20%;
   }
   * {
     @apply border-border;
@@ -117,7 +116,9 @@
   }
   body {
     @apply bg-background text-foreground transition-colors duration-300;
-    font-feature-settings: "rlig" 1, "calt" 1;
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1;
   }
   ::-webkit-scrollbar {
     width: 10px;
@@ -129,14 +130,14 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #6d28d9, #9333ea, #06b6d4);
+    background: linear-gradient(135deg, #9333ea, #ec4899, #06b6d4);
     border-radius: 10px;
     box-shadow: 0 0 8px #9333ea;
     transition: all 0.3s ease-in-out;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, #a855f7, #c084fc, #22d3ee);
+    background: linear-gradient(135deg, #9333ea, #ec4899, #06b6d4);
     box-shadow: 0 0 12px #c084fc;
   }
 

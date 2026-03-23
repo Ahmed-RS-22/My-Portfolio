@@ -1,6 +1,5 @@
 import { Briefcase, Code2, User } from "lucide-react";
 import { cn } from "../lib/utils";
-
 export const AboutMeSection = () => {
   return (
     <section className="py-24 px-4 relative" id="about">
@@ -33,9 +32,9 @@ export const AboutMeSection = () => {
               <a
                 className={cn(
                   "px-6 py-2 rounded-full text-primary hover:bg-primary/10",
-                  "transition-colors duration-300 border-2"
+                  "transition-colors duration-300 border-2",
                 )}
-                href="/AhmedRedaSalama-Resume.pdf"
+                href="/AhmedRedaSalama_Cv.pdf"
                 download
               >
                 download CV
